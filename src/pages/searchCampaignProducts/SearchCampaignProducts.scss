@@ -1,0 +1,12 @@
+.scp-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .scp-products{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+}

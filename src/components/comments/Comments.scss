@@ -1,0 +1,82 @@
+.comments {
+    margin-top: 20px;
+  
+    .comment {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+      margin-bottom: 10px;
+      position: relative;
+  
+      .comment-header {
+        display: flex;
+        margin-bottom: 10px;
+  
+        .comment-user-avatar {
+          width: 30px;
+          height: 30px;
+          object-fit: cover;
+          border-radius: 50%;
+          margin-right: 10px;
+        }
+  
+        .comment-user-name {
+          font-size: 16px;
+          font-weight: bold;
+          margin-right: 10px;
+        }
+        .stars {
+          display: flex;
+          align-items: center;
+          gap: 2px;
+          margin-left: 10px;
+    
+          .star {
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            background-color: grey;
+            clip-path: polygon(
+              50% 0%,
+              63% 38%,
+              100% 38%,
+              69% 62%,
+              82% 100%,
+              50% 75%,
+              18% 100%,
+              31% 62%,
+              0% 38%,
+              37% 38%
+            );
+            position: relative;
+          }
+    
+          .star-o {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            background-color: orange !important;
+            box-sizing: border-box;
+          }
+        }
+      }
+  
+      .comment-text {
+        font-size: 14px;
+      }
+
+      .createdAt {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 10px;
+        color: #888;
+      }
+    }
+  
+    .no-comments {
+      font-size: 18px;
+      color: #888;
+    }
+  }

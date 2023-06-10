@@ -1,0 +1,214 @@
+.productComp {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0.5rem;
+    width: 250px;
+    height: auto;
+    padding-bottom: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    color: black;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    }
+  
+    .product-img-container {
+      position: relative;
+  
+      &.sold-out {
+        &:after {
+          content: 'TÜKENDİ';
+          position: absolute;
+          top: 0;
+          left: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: 100%;
+          color: red;
+          font-size: 2.5rem;
+          font-weight: bold;
+          transform: rotate(-40deg);
+        }
+      }
+  
+      .productImg {
+        width: 100%;
+        object-fit: contain;
+        height: 330px;
+      }
+    }
+  
+    .product-infos {
+      padding: 0.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex-grow: 1;
+  
+      .product-name {
+        font-size: 100%;
+        margin: 0.5rem 0;
+        height: 40px;
+        text-align: center;
+      }
+  
+      .price {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+      }
+    }
+  
+    .campaign {
+      position: absolute;
+      background-color: #ff9800;
+      color: #fff;
+      padding: 0.2rem 0.5rem;
+      font-size: 0.9rem;
+      margin-right: 0.5rem;
+      z-index: 99;
+    }
+  
+    .campaign-price {
+      position: relative;
+      font-size: 1.3rem;
+      color: #ff5722;
+      font-weight: bold;
+      margin-bottom: 1rem;
+  
+      .old-price {
+        position: absolute;
+        font-size: 14px;
+        top: -9px;
+        left: 15%;
+        align-items: center;
+        color: black;
+        text-decoration: line-through;
+        z-index: -1;
+        opacity: 0.8;
+      }
+    }
+  
+    .product-reviews {
+        align-self: flex-end;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 5px;
+  
+      p {
+        margin: 0 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2px;
+  
+        .star {
+          display: inline-block;
+          width: 15px;
+          height: 15px;
+          background-color: grey;
+          clip-path: polygon(
+            50% 0%,
+            63% 38%,
+            100% 38%,
+            69% 62%,
+            82% 100%,
+            50% 75%,
+            18% 100%,
+            31% 62%,
+            0% 38%,
+            37% 38%
+          );
+          position: relative;
+        }
+  
+        .star-o {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          background-color: orange !important;
+          box-sizing: border-box;
+        }
+      }
+    }
+    .seller {
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+        color: #333;
+        .seller-logo {
+          width: 30px;
+          height: 30px;
+          object-fit: cover;
+          border-radius: 50%;
+          margin-right: 5px;
+        }
+
+        .seller-company {
+          font-size: 16px;
+          font-weight: bold;
+        }
+      }
+      .buttons{
+        display: block;
+        .actions{
+            display: flex;
+            justify-content: space-between;
+            margin: 10px;
+            .add-to-favorites {
+                align-items: center;
+                font-size: 24px;
+                color: gray;
+                background: transparent;
+                border: none;
+                cursor: pointer;
+                margin-right: 10px;
+                transition: color 0.3s, transform 0.3s;
+        
+                &.favorited {
+                  color: red;
+                }
+        
+                &:hover {
+                  color: red;
+                  transform: scale(1.1);
+                }
+              }
+              .add-to-cart {
+                background-color: #2196f3;
+                color: #fff;
+                border: none;
+                padding: 8px 16px;
+                border-radius: 4px;
+                cursor: pointer;
+                transition: background-color 0.2s;
+        
+                &:hover {
+                  background-color: #1976d2;
+                }
+              }
+
+              .product-buttons button{
+                padding: 5px 10px;
+                margin-right: 5px;
+                background-color: #2196f3;
+                color: #fff;
+                border: none;
+                cursor: pointer;
+              }
+        }
+      }
+  }
+  
+  
+  

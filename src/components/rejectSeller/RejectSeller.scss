@@ -1,0 +1,11 @@
+.info{
+    margin-top: 20px;
+    opacity: 0.6;
+    font-size: 17px;
+}
+.reject-seller-button{
+    background-color: red !important;
+    &:hover{
+        background-color: rgb(207, 12, 12) !important;
+    }
+}

@@ -1,0 +1,97 @@
+.campaign-product {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0.5rem;
+    width: 250px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    color: black;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    &:hover {
+      transform: scale(1);
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .checkbox{
+      position: absolute;
+      margin: 0.5rem;
+      width: 15px;
+      height: 15px;
+    }
+    .productImg {
+      width: 100%;
+      object-fit: contain;
+      height: 330px;
+    }
+
+    .product-infos {
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex-grow: 1;
+
+      .product-name {
+        font-size: 100%;
+        margin: 0.5rem 0;
+        height: 30px;
+      }
+
+      .desc {
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
+        text-align: justify;
+        overflow: hidden;
+        max-height: 120px;
+        padding: 5px;
+      }
+      .price {
+        font-size: 1.2rem;
+        margin-top: 1rem; 
+      }
+    }
+    .createdAt {
+      position: absolute;
+      top: 0;
+      right: 0;
+      
+      padding: 0.5rem;
+      background-color: #3f51b5;
+      color: white;
+      font-size: 0.8rem;
+    }
+    
+    .product-reviews{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+      p{
+        margin: 0 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2px;
+        .star {
+          display: inline-block;
+          width: 15px;
+          height: 15px;
+          background-color: grey;
+          clip-path: polygon(50% 0%, 63% 38%, 100% 38%, 69% 62%, 82% 100%, 50% 75%, 18% 100%, 31% 62%, 0% 38%, 37% 38%);
+          position: relative;
+        }
+        .star-o {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          background-color: orange !important;
+          box-sizing: border-box;
+        }
+      }
+    }
+  }
+

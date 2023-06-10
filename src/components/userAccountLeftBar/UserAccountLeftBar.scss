@@ -1,0 +1,68 @@
+.active{
+    background-color: rgba(255, 0, 0, 0.2);
+    border-radius: 5px;
+
+  }
+
+  .left-bar-start,
+  .left-bar-center,
+  .left-bar-end {
+    display: flex;
+    flex-direction: column;
+    gap:3px;
+
+    a,
+    button {
+      color: #555;
+      font-size: 16px;
+      margin-bottom: 10px;
+      text-decoration: none;
+      padding: 5px;
+      cursor: pointer;
+
+      &:hover {
+        color: #000;
+      }
+    }
+  }
+
+  .left-bar-start {
+    order: 1;
+  }
+
+  .left-bar-center {
+    order: 2;
+
+    .request-seller-button {
+      padding: 10px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+
+      &:hover {
+        background-color: #3E8E41;
+      }
+    }
+  }
+
+  .left-bar-end {
+    order: 3;
+
+    .delete-account-button {
+      padding: 10px;
+      background-color: #f44336;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+
+      &:hover {
+        background-color: #d32f2f;
+      }
+    }
+  }
+  

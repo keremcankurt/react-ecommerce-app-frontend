@@ -1,0 +1,43 @@
+.account-page {
+    display: flex;
+    flex-wrap: wrap;
+    
+  
+    .left-bar {
+      width: 200px;
+      padding: 20px 7px;
+      height: calc(100vh - 60px);
+      margin-right: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        flex-direction: row;
+        height: auto;
+        margin: 0;
+        gap: 5px;
+  
+        .left-bar-start,
+        .left-bar-center,
+        .left-bar-end {
+          margin-bottom: 0;
+        }
+      }
+    }
+  
+    .page-content {
+      flex: 1;
+      max-height: calc(100vh - 60px);
+      width: 100%;
+      overflow-y: auto; 
+      @media screen and (max-width: 768px) {
+        margin-top: 20px;
+        max-height: auto;
+        overflow-y: visible;
+      }
+    }
+  }
+  

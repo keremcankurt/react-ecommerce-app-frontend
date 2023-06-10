@@ -1,0 +1,82 @@
+.following-store {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    padding-bottom: 2.5rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: #333;
+    transition: all 0.3s ease-in-out;
+    width: 33%;
+    position: relative;
+  
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+  
+    img.company {
+      margin-right: 10px;
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+    }
+  
+    .infos {
+      flex-grow: 1;
+  
+      h2.seller-name {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+  
+      p.productCount {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+      }
+      p.followerCount {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+      }
+  
+      button.unfollow {
+        background-color: #dc3545;
+        color: #fff;
+        border: none;
+        border-radius: 0.25rem;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        margin: 7px;
+  
+        &:hover {
+          background-color: #c82333;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 850px) {
+    .following-store {
+        width: 100%;
+    }
+  }
+
+  @media screen and (min-width: 851px) and (max-width: 1054px) {
+    .following-store {
+      width: calc(50% - 10px);
+    }
+  }
+
+  @media screen and (min-width: 1055px) {
+    .following-store {
+      width: calc(33.3% - 10px);
+    }
+  }
+  

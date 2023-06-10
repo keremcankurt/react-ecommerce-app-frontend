@@ -1,0 +1,24 @@
+.favProducts-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .search{
+        margin: 10px !important;
+    }
+    .title {
+        font-size: 30px;
+        font-weight: 900;
+        font-style: italic;
+        color: blueviolet;
+    }
+
+    .products{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        gap: 5px;
+        flex-wrap: wrap;
+    }
+}

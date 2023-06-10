@@ -1,0 +1,109 @@
+.seller-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .seller-page-profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    gap: 50px;
+  }
+  
+  .seller-profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: fill;
+    margin-right: 20px;
+  }
+  
+  .seller-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .product-count {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .follow-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .follow-button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  .unfollow-button {
+    background-color: #eb2626;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .follower-count {
+    font-size: 14px;
+    margin-left: 5px;
+    background-color: #f0f0f0;
+    padding: 2px;
+    border-radius: 5px;
+    color: #888;
+  }
+  .products{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .title{
+    color: black;
+    font-size: 24px;
+    font-weight: 900;
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #888;
+    margin-top: 10px;
+  }
+  .no-products {
+    font-size: 20px;
+    font-weight: 900;
+    margin-top: 10px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .seller-page-profile {
+      flex-direction: column;
+      
+    }
+  
+    .seller-profile-picture {
+      margin-bottom: 20px;
+    }
+  }
+  

@@ -1,0 +1,73 @@
+.slider-comp {
+    position: relative;
+    width: 99%;
+  
+    .recommended-title {
+      margin-bottom: 10px;
+    }
+  
+    .recommended {
+      display: flex;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scroll-snap-type: x mandatory;
+      position: relative;
+  
+      .recommended-products {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 10px;
+  
+        .product {
+          flex: 0 0 auto;
+          margin-right: 10px;
+          scroll-snap-align: start;
+        }
+      }
+  
+      &::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+        background-color: transparent;
+      }
+    }
+  
+    .scroll-buttons {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0 10px;
+  
+      .scroll-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+  
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.7);
+        }
+      }
+  
+      .left {
+        margin-right: 10px;
+      }
+  
+      .right {
+        margin-left: 10px;
+      }
+    }
+  }
+  

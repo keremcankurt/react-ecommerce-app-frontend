@@ -1,0 +1,15 @@
+.account-transactions-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    flex-direction: column;
+    gap: 20px;
+    height: calc(100% - 60px);
+    
+}
+@media (max-width: 768px) {
+    .account-transactions-container {
+        margin-top: 0;
+    }
+}
