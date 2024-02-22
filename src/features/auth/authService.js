@@ -1,5 +1,5 @@
 import {get, post, put} from '../request';
-const BASE_URL = "http://localhost:4000/api/auth";
+const BASE_URL = "http://ec2-16-171-159-119.eu-north-1.compute.amazonaws.com:4000/api/auth";
 
 const login = (data) =>  post(`${BASE_URL}/login`,data, 'application/json');
 const logout = (data) =>  get(`${BASE_URL}/logout`);
