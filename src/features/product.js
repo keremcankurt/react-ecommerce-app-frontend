@@ -1,5 +1,5 @@
 import { get } from "./request";
-const BASE_URL = "http://localhost:4000/api/product";
+const BASE_URL = "http://ec2-16-171-159-119.eu-north-1.compute.amazonaws.com:4000/api/product";
 
 export const getProduct = id => get(`${BASE_URL}/product/${id}`);
 export const getFavProducts = () => get(`${BASE_URL}/getfavproducts`);
