@@ -1,6 +1,6 @@
 import { del, post } from '../request';
 import {get, put} from '../request';
-const BASE_URL = "http://localhost:4000/api/user";
+const BASE_URL = "http://ec2-16-171-159-119.eu-north-1.compute.amazonaws.com:4000/api/user";
 
 const upload = profile_image => put(`${BASE_URL}/upload`,profile_image);
 const getUser = () => get(`${BASE_URL}/profile`);
