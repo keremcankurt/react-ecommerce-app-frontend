@@ -1,5 +1,5 @@
 import {del, get, post, put} from '../request';
-const BASE_URL = "http://localhost:4000/api/seller";
+const BASE_URL = "http://ec2-16-171-159-119.eu-north-1.compute.amazonaws.com:4000/api/seller";
 
 const addProduct = (data) =>  post(`${BASE_URL}/add`,data);
 const getProducts = () =>  get(`${BASE_URL}/getproducts`);
